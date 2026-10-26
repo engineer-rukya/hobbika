@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Скамейка стальная «Сиеста» — Хоббика</title>
+  <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+  <div class="announcement">
+    <a href="#">Редизайн сайта «Хоббика»: скоро!</a>
+    <button class="announcement-close" aria-label="Закрыть объявление">×</button>
+  </div>
+  <header class="site-header">
+    <a class="logo" href="/" aria-label="Хоббика — главная"><span class="logo-mark">✳</span><span>хоббика</span></a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="catalog.html">Каталог</a><a href="#">Наше производство</a><a href="#">Наши работы</a>
+      <a href="#">Дилерам</a><a href="#">Услуги</a><a href="#">Контакты</a>
+    </nav>
+    <div class="header-actions"><a href="#">▣ Запросить каталог</a><a href="#">▰ Доставка и оплата</a></div>
+    <div class="header-middle-links"><a href="#">Частным клиентам</a><a href="#">Гос. учреждениям</a><a href="#">Гос. компаниям</a><a href="#">Паркам</a><a href="#">Застройщикам</a><a href="#">Дизайнерам/Архитекторам</a><a href="#">Умный город</a></div>
+    <div class="header-contacts"><span>+7 495 248-13-18 Москва</span><span>+7 473 251-48-47 Воронеж</span><span>+7 812 649-03-73 Санкт-Петербург</span><span>+7 978 742-85-95 Крым</span><a href="mailto:zakaz@hobbyka.ru">zakaz@hobbyka.ru</a></div>
+    <div class="header-icons"><a href="#" aria-label="Telegram">●</a><a href="mailto:zakaz@hobbyka.ru" aria-label="Почта">✉</a><a href="catalog.html" aria-label="Каталог меню">▦</a><a href="#" aria-label="Поиск">⌕</a><a href="cart.html" aria-label="Корзина">🛒<small id="cart-count">0</small></a><a href="login.html" aria-label="Профиль">♙</a></div>
+  </header>
+
+  <main class="product-page">
+    <div class="breadcrumbs"><a href="index.html">Главная</a><span>/</span><a href="catalog.html">Каталог</a><span>/</span><a href="category.html">Скамейки</a><span>/</span><span>Скамейка стальная «Сиеста»</span></div>
+    <section class="product-layout">
+      <div class="gallery">
+        <span class="new-badge">✳ Новинка</span>
+        <button class="gallery-arrow previous" aria-label="Предыдущее изображение">‹</button>
+        <div class="main-image-wrap">
+          <img id="main-product-image" src="assets_bench_main.jpg" alt="Скамейка стальная «Сиеста», вид спереди">
+        </div>
+        <button class="gallery-arrow next" aria-label="Следующее изображение">›</button>
+        <div class="gallery-dots" aria-label="Выбор изображения">
+          <button class="dot active" data-image="assets_bench_main.jpg" aria-label="Вид спереди"></button>
+          <button class="dot" data-image="assets_bench_lifestyle.jpg" aria-label="Скамейка в парке"></button>
+          <button class="dot" data-image="assets_bench_main.jpg" aria-label="Вид сбоку"></button>
+          <button class="dot" data-image="assets_bench_lifestyle.jpg" aria-label="Скамейка в интерьере парка"></button>
+          <button class="dot" data-image="assets_bench_main.jpg" aria-label="Детали скамейки"></button>
+          <button class="dot" data-image="assets_bench_lifestyle.jpg" aria-label="Пример использования"></button>
+          <button class="dot" data-image="assets_bench_main.jpg" aria-label="Дополнительный вид"></button>
+        </div>
+      </div>
+
+      <article class="product-info">
+        <div class="breadcrumbs product-crumb"><a href="index.html">Главная</a><span>/</span><a href="catalog.html">Каталог</a><span>/</span><a href="category.html">Скамейки</a><span>/</span><span>Скамейка стальная «Сиеста»</span></div>
+        <h1>Скамейка стальная «Сиеста»</h1>
+        <p class="sku">Артикул: 67169</p>
+        <div class="purchase-row">
+          <strong class="price">64 800 ₽</strong>
+          <div class="quantity-control" aria-label="Количество товара">
+            <button type="button" id="minus" aria-label="Уменьшить количество">−</button>
+            <input id="quantity" type="number" min="1" max="99" value="1" aria-label="Количество">
+            <button type="button" id="plus" aria-label="Увеличить количество">+</button>
+          </div>
+        </div>
+        <button class="button button-yellow add-cart" id="add-cart">Добавить к заказу</button>
+        <button class="button button-yellow buy-button" id="buy-now">Купить в 1 клик</button>
+        <p class="purchase-note" id="purchase-note" role="status" aria-live="polite"></p>
+        <nav class="product-tabs" aria-label="Информация о товаре">
+          <a href="#specifications">Характеристики</a><a href="#description">Описание</a><a href="#reviews">Отзывы</a><a href="#delivery">Доставка и оплата</a>
+        </nav>
+        <button class="compare-button" id="compare-button">▣ Добавить к сравнению</button>
+
+        <section class="option-section">
+          <h2>Версия</h2>
+          <button class="text-option selected" type="button">Стандарт</button>
+        </section>
+        <p class="delivery-state">Поставляется в разобранном виде</p>
+        <section class="option-section">
+          <h2>Основные цвета</h2>
+          <div class="color-options">
+            <button class="color-option selected" data-color="Махагон" type="button"><span style="background:linear-gradient(135deg,#9e4325,#6d281b)"></span><small>Махагон</small></button>
+            <button class="color-option" data-color="Палисандр" type="button"><span style="background:linear-gradient(135deg,#5b332a,#241a18)"></span><small>Палисандр</small></button>
+            <button class="color-option" data-color="Тик" type="button"><span style="background:linear-gradient(135deg,#c17c35,#8f4e1d)"></span><small>Тик</small></button>
+            <button class="color-option" data-color="Орех" type="button"><span style="background:linear-gradient(135deg,#b18a68,#77533a)"></span><small>Орех</small></button>
+            <button class="color-option" data-color="Венге" type="button"><span style="background:linear-gradient(135deg,#242323,#090909)"></span><small>Венге</small></button>
+          </div>
+          <p class="selected-color">Выбранный цвет: <strong id="selected-color-name">Махагон</strong></p>
+        </section>
+
+        <section class="option-section">
+          <h2>Теги</h2>
+          <div class="tag-list"><a href="category.html">Парковые скамейки</a>, <a href="category.html">Уличные скамейки</a>, <a href="category.html">Скамейки во двор</a>, <a href="category.html">Скамейки для детского сада</a>, <a href="category.html">Скамейки из металла</a></div>
+        </section>
+        <p class="protection-note">☆ Скамейка имеет дополнительную защиту от раскачивания</p>
+        <section class="files-box">
+          <h2>Файлы</h2>
+          <a href="#" class="file-link">♧ Паспорт изделия PDF, 247.65 КБ</a>
+          <a href="#" class="file-link">♧ Сертификат соответствия</a>
+          <a href="#" class="file-link">♧ Запросить инструкцию</a>
+          <a href="#" class="file-link">♧ Запросить паспорт</a>
+          <a href="#" class="file-link">♧ Запросить материалы для проектирования</a>
+        </section>
+        <p class="disclaimer">Производитель оставляет за собой право изменить конфигурацию изделия на своё усмотрение без уведомления заказчика.</p>
+      </article>
+    </section>
+
+    <section class="details-section" id="specifications">
+      <h2>Подробные характеристики</h2>
+      <div class="details-columns">
+        <div id="description">
+          <h3>Материалы</h3>
+          <p><strong>Опоры:</strong> сталь с покрытием порошковой полимерной краской. Стандартные цвета — чёрный RAL 9005 или серый RAL 7016.</p>
+          <p><strong>Сиденье и спинка:</strong> брус из хвойных пород древесины. Покрытие — атмосферостойкая лессирующая акриловая пропитка с лаком.</p>
+          <p>Поставляется в разобранном виде.</p>
+          <h3>О модели</h3>
+          <p>Лаконичная парковая скамейка для благоустройства дворов, скверов, парков и общественных пространств. Металлический каркас обеспечивает устойчивость, а деревянные ламели делают посадку комфортной.</p>
+        </div>
+        <div>
+          <h3>Технические характеристики</h3>
+          <ul class="spec-list"><li><span>Длина</span><b>1960 мм</b></li><li><span>Ширина</span><b>815 мм</b></li><li><span>Высота</span><b>810 мм</b></li><li><span>Вес</span><b>76 кг</b></li><li><span>Объём для транспортировки</span><b>0,22 м³</b></li><li><span>Высота сиденья</span><b>461 мм</b></li><li><span>Глубина сиденья</span><b>472 мм</b></li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="delivery-section" id="delivery">
+      <h2>Доставка и оплата</h2>
+      <p>Стоимость доставки рассчитывается индивидуально и зависит от адреса, объёма заказа и способа разгрузки.</p>
+      <p>Для уточнения сроков и стоимости доставки свяжитесь с менеджером: <a href="tel:+74952481318">+7 495 248-13-18</a> или <a href="mailto:zakaz@hobbyka.ru">отправьте нам письмо</a>.</p>
+    </section>
+    <section class="reviews-section" id="reviews"><h2>Отзывы</h2><p>Пока нет отзывов об этом товаре.</p><button class="button button-yellow" id="review-button">Добавить отзыв</button><p class="purchase-note" id="review-note" role="status"></p></section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong><a href="catalog.html">Каталог</a></strong><a href="category.html">Дачная мебель</a><a href="category.html">Скамейки</a><a href="category.html">Садовые скамейки</a><a href="category.html">Урны для мусора</a><a href="category.html">Цветочницы и вазоны</a><a href="category.html">Павильоны и перголы</a></div>
+    <div><strong>Наши услуги</strong><a href="#">Металлообработка</a><a href="#">Разработка МАФ</a><a href="#">Порошковая окраска</a><a href="#">Монтаж и установка</a><a href="#">Услуги манипулятора</a></div>
+    <div><strong>О компании «Хоббика»</strong><a href="#">История компании</a><a href="#">Наше производство</a><a href="#">Сертификаты</a><a href="#">Наши партнеры</a><a href="#">Отзывы и награды</a><a href="#">Наши работы</a></div>
+    <div><strong>© 2026. ООО «Хоббика»</strong><p>ИНН — 7720668789, ОГРН — 1097746608189</p><a href="mailto:zakaz@hobbyka.ru">zakaz@hobbyka.ru</a><p>+7 495 248-13-18</p></div>
+  </footer>
+
+  <div class="cookie-banner" id="cookie-banner"><span>Мы обрабатываем cookie, чтобы сделать наш сайт удобнее и персонализированнее для вас, на условиях, указанных <a href="#">здесь</a>.</span><button id="cookie-ok">OK</button></div>
+  <button class="chat-button" type="button">● Мы не в сети, напишите нам и мы перезвоним!</button>
+  <script>
+    const image = document.getElementById('main-product-image');
+    const dots = [...document.querySelectorAll('.dot')];
+    let activeImage = 0;
+    function showImage(index) {
+      activeImage = (index + dots.length) % dots.length;
+      image.src = dots[activeImage].dataset.image;
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === activeImage));
+    }
+    dots.forEach((dot, index) => dot.addEventListener('click', () => showImage(index)));
+    document.querySelector('.gallery-arrow.previous').addEventListener('click', () => showImage(activeImage - 1));
+    document.querySelector('.gallery-arrow.next').addEventListener('click', () => showImage(activeImage + 1));
+
+    const quantity = document.getElementById('quantity');
+    document.getElementById('minus').addEventListener('click', () => quantity.value = Math.max(1, Number(quantity.value || 1) - 1));
+    document.getElementById('plus').addEventListener('click', () => quantity.value = Math.min(99, Number(quantity.value || 1) + 1));
+    quantity.addEventListener('change', () => quantity.value = Math.min(99, Math.max(1, Number(quantity.value || 1))));
+
+    document.querySelectorAll('.color-option').forEach(button => button.addEventListener('click', () => {
+      document.querySelectorAll('.color-option').forEach(item => item.classList.remove('selected'));
+      button.classList.add('selected');
+      document.getElementById('selected-color-name').textContent = button.dataset.color;
+    }));
+    document.getElementById('add-cart').addEventListener('click', () => {
+      const count = Number(quantity.value || 1);
+      const cart = JSON.parse(localStorage.getItem('hobbikaCart') || '[]');
+      const item = cart.find(entry => entry.id === 'siesta-67169' && entry.color === document.getElementById('selected-color-name').textContent);
+      if (item) item.quantity += count;
+      else cart.push({ id: 'siesta-67169', name: 'Скамейка стальная «Сиеста»', price: 64800, quantity: count, color: document.getElementById('selected-color-name').textContent });
+      localStorage.setItem('hobbikaCart', JSON.stringify(cart));
+      document.getElementById('cart-count').textContent = cart.reduce((sum, entry) => sum + entry.quantity, 0);
+      document.getElementById('purchase-note').textContent = 'Товар добавлен к заказу.';
+    });
+    document.getElementById('buy-now').addEventListener('click', () => {
+      document.getElementById('purchase-note').textContent = 'Для оформления заказа свяжитесь с менеджером: +7 495 248-13-18.';
+    });
+    document.getElementById('compare-button').addEventListener('click', event => {
+      event.currentTarget.classList.toggle('is-selected');
+      event.currentTarget.textContent = event.currentTarget.classList.contains('is-selected') ? '✓ Добавлено к сравнению' : '▣ Добавить к сравнению';
+    });
+    document.getElementById('review-button').addEventListener('click', () => {
+      document.getElementById('review-note').textContent = 'Чтобы оставить отзыв, пожалуйста, войдите в личный кабинет.';
+    });
+    document.querySelector('.announcement-close').addEventListener('click', () => document.querySelector('.announcement').remove());
+    document.getElementById('cookie-ok').addEventListener('click', () => document.getElementById('cookie-banner').remove());
+    document.getElementById('cart-count').textContent = (JSON.parse(localStorage.getItem('hobbikaCart') || '[]')).reduce((sum, entry) => sum + entry.quantity, 0);
+  </script>
+</body>
+</html>
