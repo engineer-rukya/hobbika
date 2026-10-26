@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация нового пользователя — Хоббика</title>
+  <link rel="stylesheet" href="css/account.css">
+</head>
+<body>
+<div class="announcement">
+    <a href="#">Редизайн сайта «Хоббика»: скоро!</a>
+    <button class="announcement-close" aria-label="Закрыть">×</button>
+  </div>
+  <header class="site-header">
+    <a class="logo" href="index" aria-label="Хоббика — главная"><span class="logo-mark">✳</span><span>хоббика</span></a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="catalog.html">Каталог</a><a href="#">Наше производство</a><a href="#">Наши работы</a>
+      <a href="#">Дилерам</a><a href="#">Услуги</a><a href="#">Контакты</a>
+    </nav>
+    <div class="header-actions"><a href="#">▣ Запросить каталог</a><a href="#">▰ Доставка и оплата</a></div>
+    <div class="header-middle-links"><a href="#">Частным клиентам</a><a href="#">Гос. учреждениям</a><a href="#">Гос. компаниям</a><a href="#">Паркам</a><a href="#">Застройщикам</a><a href="#">Дизайнерам/Архитекторам</a><a href="#">Умный город</a></div>
+    <div class="header-contacts"><span>+7 495 248-13-18 Москва</span><span>+7 473 251-48-47 Воронеж</span><span>+7 812 649-03-73 Санкт-Петербург</span><span>+7 978 742-85-95 Крым</span><a href="mailto:zakaz@hobbyka.ru">zakaz@hobbyka.ru</a></div>
+    <div class="header-icons"><a href="#" aria-label="Telegram">●</a><a href="mailto:zakaz@hobbyka.ru" aria-label="Почта">✉</a><a href="catalog.html" aria-label="Каталог меню">▦</a><a href="#" aria-label="Поиск">⌕</a><a href="cart.html" aria-label="Корзина">🛒<small>0</small></a><a href="login.html" aria-label="Профиль">♙</a></div>
+  </header>
+  <main class="registration-main">
+    <div class="breadcrumbs"><a href="index-home.html">Главная</a><span>/</span><a href="login.html">Мой кабинет</a><span>/</span><span>Регистрация</span></div>
+    <h1>Регистрация нового пользователя</h1>
+    <form class="registration-form" id="registration-form">
+      <div class="registration-row">
+        <label for="reg-login">Логин (мин. 3 символа)*:</label>
+        <input id="reg-login" name="login" type="text" minlength="3" autocomplete="username" placeholder=" " required>
+        <span></span>
+      </div>
+      <div class="registration-row">
+        <label for="reg-email">E-mail*:</label>
+        <input id="reg-email" name="email" type="email" autocomplete="email" placeholder=" " required>
+        <span></span>
+      </div>
+      <div class="registration-row">
+        <label for="reg-password">Пароль*:</label>
+        <input id="reg-password" name="password" type="password" minlength="8" autocomplete="new-password" placeholder=" " required>
+        <button class="password-toggle" type="button" data-target="reg-password" aria-label="Показать пароль">◉</button>
+      </div>
+      <div class="registration-row">
+        <label for="reg-password-confirm">Подтверждение пароля*:</label>
+        <input id="reg-password-confirm" name="password-confirm" type="password" minlength="8" autocomplete="new-password" placeholder=" " required>
+        <button class="password-toggle" type="button" data-target="reg-password-confirm" aria-label="Показать подтверждение пароля">◉</button>
+      </div>
+      <label class="registration-consent">
+        <input type="checkbox" name="consent" required>
+        <span>Даю согласие на обработку моих персональных данных. Соглашаюсь с <a href="#">Политикой конфиденциальности</a> и ознакомлен(а) с <a href="#">Политикой в отношении обработки персональных данных</a></span>
+      </label>
+      <button class="registration-submit" type="submit">Регистрация</button>
+      <p class="required-note">*Поля, обязательные для заполнения.</p>
+      <p class="registration-feedback" id="registration-feedback" role="status" hidden></p>
+    </form>
+  </main>
+<footer class="site-footer">
+    <div><strong><a href="catalog.html">Каталог</a></strong><a href="catalog.html">Дачная мебель</a><a href="index.html">Скамейки</a><a href="catalog.html">Садовые скамейки</a><a href="catalog.html">Урны для мусора</a><a href="catalog.html">Цветочницы и вазоны</a><a href="catalog.html">Велосипедные парковки</a><a href="catalog.html">Парковое освещение</a><a href="catalog.html">Павильоны и перголы</a><a href="catalog.html">Столбики и ограждения</a></div>
+    <div><strong>Наши услуги</strong><a href="#">Металлообработка в Москве и Московской области</a><a href="#">Разработка МАФ, конструкторская документация</a><a href="#">Порошковая окраска</a><a href="#">Монтаж и установка МАФ</a><a href="#">Услуги манипулятора</a><a href="#">Пиломатериалы со склада в Москве</a><br><strong>Клиентам</strong><a href="#">Оплата</a><a href="#">Доставка</a></div>
+    <div><strong>О компании «Хоббика»</strong><a href="#">История компании</a><a href="#">Наше производство</a><a href="#">Сертификаты</a><a href="#">Наши партнеры</a><a href="#">Отзывы и награды</a><a href="#">Пресса о нас</a><a href="#">Наши работы, портфолио</a></div>
+    <div><strong>© 2026. ООО «Хоббика»</strong><span>ИНН — 7720668789, ОГРН — 1097746608189</span><br><a href="#">Публичный API Хоббики</a><br><strong>Офис в Москве</strong><span>ул. Молостовых 14А</span><span>Время работы: Пн–Пт с 9:00 до 18:00</span><a href="mailto:zakaz@hobbyka.ru">zakaz@hobbyka.ru</a><br><span>+7 495 248-03-18</span><br><strong>Офис в Санкт-Петербурге</strong><span>spb5@hobbyka.ru</span><span>+7 812 649-03-73</span></div>
+    <div><div class="footer-social"><a href="#">▶</a><a href="#">VK</a></div><a class="footer-pill" href="#">➤ Канал в Telegram</a><a class="footer-pill" href="#">➤ Канал «Умный город»</a><a href="#">Подписаться на email-рассылку</a><p>Обращаем Ваше внимание на то, что вся представленная на сайте информация носит информационный характер и ни при каких условиях не является офертой.</p></div>
+  </footer>
+  <a class="mail-float" href="mailto:zakaz@hobbyka.ru" aria-label="Написать письмо">✉</a>
+  <div class="chat-bubble">● Мы не в сети, напишите нам и мы перезвоним!</div>
+  <div class="cookie-notice"><span>Мы обрабатываем cookie, чтобы сделать наш сайт удобнее и персонализированнее для вас, на условиях, указанных <a href="#">здесь</a>.</span><button type="button">OK</button></div>
+  <script>
+    document.querySelectorAll(".password-toggle").forEach(function(button) {
+      button.addEventListener("click", function() {
+        const input = document.getElementById(button.dataset.target);
+        input.type = input.type === "password" ? "text" : "password";
+      });
+    });
+
+    const registrationForm = document.getElementById("registration-form");
+    const password = document.getElementById("reg-password");
+    const confirmation = document.getElementById("reg-password-confirm");
+    const feedback = document.getElementById("registration-feedback");
+
+    function validatePasswordMatch() {
+      confirmation.setCustomValidity(
+        confirmation.value && password.value !== confirmation.value
+          ? "Пароли не совпадают"
+          : ""
+      );
+    }
+    password.addEventListener("input", validatePasswordMatch);
+    confirmation.addEventListener("input", validatePasswordMatch);
+
+    registrationForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+      validatePasswordMatch();
+      if (!registrationForm.reportValidity()) return;
+      feedback.hidden = false;
+      feedback.textContent = "Форма заполнена корректно. Для фактического создания аккаунта потребуется серверная часть.";
+    });
+
+    const cookieButton = document.querySelector(".cookie-notice button");
+    if (cookieButton) cookieButton.addEventListener("click", function() {
+      document.querySelector(".cookie-notice").hidden = true;
+    });
+    const announcementClose = document.querySelector(".announcement-close");
+    if (announcementClose) announcementClose.addEventListener("click", function() {
+      document.querySelector(".announcement").hidden = true;
+    });
+  </script>
+</body>
+</html>
